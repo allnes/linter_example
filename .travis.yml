@@ -12,7 +12,7 @@ jobs:
 install:
 - sudo apt-get install python3-pip;
 - sudo pip install --upgrade pip;
-- sudo pip install setuptools cpplint; fi
+- sudo pip install setuptools cpplint;
 
 script:
 - mkdir build
