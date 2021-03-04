@@ -9,12 +9,10 @@ jobs:
           sources: ubuntu-toolchain-r-test
           packages: g++-8
 
-before_install:
-- sudo apt-get update
-- sudo apt-get install python3
-
 install:
-- python -m pip install cpplint
+sudo apt install python3-pip;
+sudo pip install --upgrade pip;
+sudo pip install setuptools cpplint; fi
 
 script:
 - mkdir build
